@@ -15,12 +15,12 @@ este documento expecifica como es el uso del script creado.
 4) ejecutar el comando docker-compose up (correra el script src/main.py)
 5) para mejor control de las iteraciones, puede escribir la siguiente linea en el terminal:
 
-	docker-compose run kmeans sh -c "python main.py iter": para ejecutar un numero de iteraciones determinadas por usted,
+	***docker-compose run kmeans sh -c "python main.py iter"***: para ejecutar un numero de iteraciones determinadas por usted,
 	en este caso seran 100 iteraciones, pero puede cambiarlo simplemente modificando 100 por algun numero a su gusto.
 
 
 
-	docker-compose run kmeans sh -c "python main.py n_samples": para ingresar por pantalla la cantidad de puntos en el eje
+	***docker-compose run kmeans sh -c "python main.py n_samples"***: para ingresar por pantalla la cantidad de puntos en el eje
 	de coordenadas que se analizara
 
 
