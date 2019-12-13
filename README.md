@@ -1,4 +1,6 @@
 ***En este repositorio estare subiendo las actualizaciones que le haga al script, por el momento el script posee dos versiones:***
+
+
 **kmeans0.1**:
   Esta version tiene muchos valores por default, con una unica interaccion (modificar la cantidad de iteraciones) 
 **kmeans0.2**:
