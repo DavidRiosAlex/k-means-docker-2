@@ -10,7 +10,7 @@ de datos son similares y que otros no.
  
 este documento expecifica como es el uso del script creado.
 1) ejecutar la terminal
-2) posicionarse en la carpeta kmeans
+2) posicionarse en la carpeta kmeans0.2
 3) ejecutar el comando docker-compose build
 4) ejecutar el comando docker-compose up (correra el script src/main.py)
 5) para mejor control de las iteraciones, puede escribir la siguiente linea en el terminal:
