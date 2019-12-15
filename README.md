@@ -1,4 +1,4 @@
-***En este repositorio estare subiendo las actualizaciones que le haga al script, por el momento el script posee dos versiones:***
+***En este repositorio estare subiendo las actualizaciones que le haga al script, por el momento el script posee tres versiones:***
 
 
 **kmeans0.1**:
