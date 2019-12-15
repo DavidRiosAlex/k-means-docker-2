@@ -53,6 +53,8 @@ lo segundo que observara es un dataframe creado con pandas, el cual le mostrara 
 al final de programa obtendra una salida de los 10 k con los que se probo el algoritmo, junto al promedio de las distancias entre los puntos con su centroide mas cercano.
 
 ![img](./img/KProm.png)
+
+
 para finalizar, si decea observar observar como se acomodan nuestros centroides con cada ciclo, ejecute el script
 	individualmente con el comando 'python src/main.py' ('python3 src/main.py' si utiliza linux) debido a un error que
 	no pude solucionar el cual no muestra los plt.show() cuando se ejecuta en docker.
