@@ -1,0 +1,47 @@
+1- utilizar las librerias ya existentes de kmeans como sklearn
+2- utilizar centroides sin asignar una posicion random, podria comenzar desde los extremos
+	de nuestro eje de cordenadas ([[0,0],[100,100],[100,0],[0,100]]) de esta manera ir cerrando
+	nuestro mapa, mientras el mismo se cierra por la operacion de distancia entre los puntos
+	y luego acomodandose en los lugares que se asignan a atraves de la repeticion del algoritmo.
+3- utilizar recursion en vez de ciclos
+
+
+4- evaluar la distancia promedia entre los puntos que pertenecen a los centroides:
+	(repeat{ 
+		prom = sum(sqrd(||centroideJ - pN||^2))
+		} 
+	dist = prom/n
+
+   pasar un parametro alpha > 1 que actuara como regulador. en el caso de que se supere dicha
+   distanciaPromedio * alpha se creara un nuevo centroide que actue como centro de masas de los puntos existentes
+   en la zona.
+
+	repeat{
+		if (sqrd(||centroideJ - pN||^2)) >> (dist * alpha)
+		then newCentroid = pN
+
+		}
+   	siendo J∈{centroide}
+	       N∈{puntos}
+
+
+5 - crear una funcion que sea una recta Ax + By = C, tomando en cuenta dos centroides como principio y fin de la recta 
+    evaluando los puntos que estan mas cerca de la misma (usando la formula de distancia entre punto y recta ), para un
+    mejor analisis de los datos, o como contra parte al punto (4) tomando el promedio de la distacia entre puntos con su respectivo 
+    centroide como radio(R) que grafique un circulo "imaginario", para evaluar si se es necesario crear otro centroides para los
+    puntos que no forman parte del radio de los centroides ya existentes.
+
+6- cuando los datos que poseo se tratan de strings, pasar los strings a numeros que los referencien en un eje de cordenadas
+	i.e. : db ={ x: ['no','si','si','no'], y: ['hombre','mujer','hombre','mujer']} ---->
+		{x:[0,1,1,0],y:[0,1,1,0]} db ∈ personas con auto  separadas por sexo.
+7- Inicializar los n centroides en alguna posicion random del conjunto de puntos
+
+8- evaluar la distancia entre cada punto del conjunto de datos e inicializar los n centroides en los n puntos con mayor 
+	distancia entre ellos, ejecutando luego el algoritmo de k means.
+
+VENTAJAS DE K-MEANS++ SOBRE K-MEANS
+
+1) posee un valor de potencia mas pequeña que K-MEANS ya sea de magnitud o de velocidad
+2) k-means puede llegar a fusionar los grupos en ciertos ejemplos por el seeding aleatorio,
+	pero el metodo de seeding de k-means++ puede corregir el problema
+3) El rendimiento de K-means++ es mucho mejor que el de K-means, hasta un 70% mayor.
